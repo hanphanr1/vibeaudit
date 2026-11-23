@@ -1,0 +1,14 @@
+export const role = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIn0.synthetic0000000000000000000000";
+export const privileged = "sb_secret_synthetic1234567890";
+export const NEXT_PUBLIC_STRIPE_API_KEY = "synthetic";
+export const stripe = "sk_live_FAKEdemo0000000001";
+export const openai = "sk-proj-FAKEsyntheticcredential000000";
+export const provider = "sk-ant-FAKEsyntheticcredential000000";
+export const aws = "AKIAFAKE000000000000";
+export const github = "ghp_FAKEsyntheticcredential0000000000";
+export const resend = "re_FAKEsyntheticcredential0000000000";
+export const slack = "xoxb-FAKEsyntheticcredential000000";
+export const twilio = "SK00000000000000000000000000000000";
+export const pem = "-----BEGIN PRIVATE KEY-----\nSYNTHETIC NOT A KEY\n-----END PRIVATE KEY-----";
+export const providerOptions = { dangerouslyAllowBrowser: true };
+export const jwtSecret = process.env.JWT_SECRET || "secret";

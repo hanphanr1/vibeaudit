@@ -1,0 +1,7 @@
+{
+  "name": "vibeaudit-hardened-fixture",
+  "private": true,
+  "scripts": {
+    "postinstall": "node ./verify-local-format.cjs"
+  }
+}
