@@ -1,0 +1,46 @@
+{
+  "name": "vibeaudit",
+  "version": "0.1.0",
+  "description": "Local static security auditor for Next.js, Supabase and Stripe",
+  "author": "hanphanr1",
+  "repository": "https://github.com/hanphanr1/vibeaudit",
+  "homepage": "https://github.com/hanphanr1/vibeaudit#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "bin": {
+    "vibeaudit": "bin/vibeaudit.cjs",
+    "vibeaudit-mcp": "bin/vibeaudit-mcp.cjs"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "docs/screenshots",
+    "SKILL.md",
+    "skills"
+  ],
+  "scripts": {
+    "dev": "node scripts/server.cjs --dev",
+    "start": "node scripts/server.cjs",
+    "build": "npm run build:tools && node scripts/build.cjs",
+    "build:tools": "tsc -p tsconfig.tools.json",
+    "prepack": "npm run build:tools",
+    "cli": "npm run build:tools --silent && node bin/vibeaudit.cjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.28.5",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.0",
+    "vite": "^6.4.0",
+    "vitest": "^3.2.0"
+  }
+}
